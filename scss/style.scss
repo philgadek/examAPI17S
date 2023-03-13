@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+@mixin box($width, $height, $pad){
+    margin-left: 30px;
+    max-width: $width;
+    height: $height;
+    padding-left: $pad;
+    min-width: 200px;
+}
+
+.page-title{
+    justify-content: center;
+    padding: 20px;
+}
+
+label{
+    padding-left: 30px;
+}
+.label1{
+    padding-top: 10px;
+}
+
+.submit-button{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.form-control{
+    @include box(20vw, 30px, 10px);
+    margin-left: 30px;
+}
+
+.custom-select{
+    @include box(20vw, 100%, 10px);
+}
+
+.custom-checkbox{
+    @include box(100%, 100%, 10px);
+}
+
+.bi{
+    color: gold
+}
